@@ -1,0 +1,83 @@
+!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="pmi_styles.css"/>
+</head>
+  <body>
+	<script type="text/JavaScript">
+
+		// page 36
+		//Ask the user to enter a date string
+		document.write("Hello" + "<br>");
+		var originalDate = prompt( "Enter a date (Day, Name of the Month, Year)", "31 Dec 2003" );
+		
+		// Overwrite the originalDate variable with a new Date object
+		var originalDate =new Date(originalDate);
+		//ask the user to enter the number f days to be added and convert to number
+		var addDays = Number(prompt("Enter number of days to be added","1"))
+		// Set a new value for originalDate plus the days to be added
+		originalDate.setDate(originalDate.getDate() + addDays )
+		// write out the date held by the originalDate object using the toString() method
+		document.write(originalDate.toString() )
+		/*
+		//page 35
+		var someDate = new Date( "31 Jan 2003 11:59" );
+		// Retrieve the first four values using the appropriate get methods
+		document.write( "Minutes = " + someDate.getMinutes() + "<br>" );	
+		document.write( "Year = " + someDate.getFullYear() + "<br>" );		
+		document.write( "Month = " + someDate.getMonth() + "<br>" );
+		document.write( "Date= " + someDate.getDate() + "<br>" );
+		// Set the minutes(34);
+		someDate.setMinutes(34);
+		document.write("Minutes=" + someDate.getMinutes() + "<br>");
+		// Reset the date
+		someDate.setDate(32);
+		document.write("Date=" + someDate.getDate() + "<br>");
+		document.write("Month=" + someDate.getMonth() + "<br>");	
+		
+		// page 34
+		var todayDate = new Date();
+		document.write( todayDate + "<br />");
+		var newMillenium= new Date( " 1 Jan 2000 10:24:00");
+		document.write( newMillenium + "<br />");
+		var birthday= new Date( 1962, 0, 19, 2, 30, 05);
+		document.write( birthday + "<br />");		
+		
+		// Page 33 Exercise 1
+		var userEmail = prompt( "Please enter your email address ", "");
+		document.write( userEmail.indexOf( "@" ));
+		
+		// Page 33 Exercise 2
+		var myOldString = "Hello World";
+		var myNewString = myOldString.substring(2 , 5);
+		document.write( myNewString);
+		
+
+		// Page 33 Exercise 3
+		var characterName = "my name is Simpson, Homer";
+		var firstNameIndex = characterName.indexOf( "Simpson,") + 9;
+		var firstName = characterName.substring( firstNameIndex);
+		document.write(firstName + "<br />");
+		*/
+		
+		/* Old code
+		var userEnteredNumber = prompt( "Please enter a number","");
+		document.write( "Type of = " + typeof( userEnteredNumber) + "<br />");
+		document.write ( "<br />" + "<br />" + "<br />");
+		document.write ( "The number you entered = " + userEnteredNumber + "<br />");
+		userEnteredNumber = Number( userEnteredNumber );
+		var myCalc = 1 + userEnteredNumber;
+		var myResponse = "The number you entered + 1 = " + myCalc + "<br />";
+		document.write ( myResponse );
+		document.write( "Type of = " + typeof( userEnteredNumber) + "<br />");
+		document.write( "ParseFloat = " + parseFloat( userEnteredNumber) + "<br />");
+		document.write( "ParseInt = " + parseInt( userEnteredNumber) + "<br />");
+		userEnteredNumber=Number(userEnteredNumber);
+		document.write( "Converted your input to number type, so it is " +userEnteredNumber + "<br />");
+		document.write( "Type of = " +typeof( userEnteredNumber)+ "<br />");
+		*/
+	</script>
+  </body>
+</html>
